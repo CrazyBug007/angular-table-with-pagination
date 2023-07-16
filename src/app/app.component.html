@@ -31,14 +31,14 @@
     </tbody>
   </table>
 
-  <div class="pagination">
-    <h4>{{totalPages}}</h4>
-    <a href="#" [class.disabled]="pageNo===1" class="angle" 
+  <div class="pagination p-style">
+    <a href="#" [class.disabled]="pageNo===1" class="angle p-6" 
         (click)="onPageChange(pageNo-1)" id='previous-page'>
       <i class="fa fa-angle-left" style="font-size:24px"></i>
     </a>
-    <!-- <a *ngFor="let page of _pages" [class.active]="+activePage===converToNumber(page)"
-        (click)="onPageChange($event,converToNumber(page))" id="page_{{page}}">{{page}}</a> -->
+    <a class="p-6 pagination__data" *ngFor="let page of _pages"
+        (click)="onPageChange(page)" id="page_{{page}}">
+        <i>{{page}}</i></a>
     <a href="#" [class.disabled]="pageNo===totalPages" class="angle"
         (click)="onPageChange(pageNo+1)"
         id='next-page'>

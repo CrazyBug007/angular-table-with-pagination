@@ -1,21 +1,115 @@
-table thead, table tbody tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+table thead,
+table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+th {
+  background-color: gray !important;
+  border-right: 1px solid whitesmoke;
+}
+
+td {
+  height: 58px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.has_table .my_table {
+  background-color: #fff;
+  width: 100%;
+}
+.my_table > thead > tr {
+  background-color: #e1e6ef;
+}
+.my_table > tbody > tr {
+  margin: 5px 0px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.my_table > tbody > tr.active {
+  border: dotted 2px #959595;
+  background-color: #f9f9fa;
+}
+
+.my_table > thead > tr > th {
+  border-bottom: none;
+  font-weight: 500 !important;
+}
+
+.my_table > tbody > tr > td {
+  padding: 8px 7px;
+}
+
+.table > thead > tr > .th_50 {
+  min-width: 50px;
+}
+
+.table > thead > tr > .th_70 {
+  min-width: 70px;
+}
+
+.table > thead > tr > .th_75 {
+  min-width: 75px;
+}
+
+.my_table > tbody > tr > .status {
+  font-size: small;
+  font-weight: 500 !important;
+}
+
+.my_table > tbody > tr > .plan {
+  max-width: 300px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.angle{
+  color: #818b8b;
+}
+
+.p-6 {
+  padding: 6px;
+}
+.pagination__data {
+  cursor: pointer;
+}
+
+
+.pagination{
+  float: right;
+  margin-right: 10%;
+  a{
+      border-radius: 34px;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color : black;
+      text-decoration: none;
+      &.active{
+          background: rgba(2, 123, 252, 0.1);
+          color: #027bfc;
+          font-weight: 600;
+      }
+      &.angle{
+          color: black;
+      }
+      &.disabled{
+          cursor: not-allowed;
+          color : #d3d3d4;;
+      }
   }
-  
-  th {
-    background-color: gray !important;
-    border-right: 1px solid whitesmoke;
+  #previous-page{
+      margin-right: 16px;
   }
-  
-  td {
-    height: 58px;
+  #next-page{
+      margin-left:16px;
   }
-  
-  .link {
-    color: blue;
-    text-decoration: underline !important;
-    cursor: pointer;
-  }
-  
+}
