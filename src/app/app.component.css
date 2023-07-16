@@ -1,0 +1,21 @@
+table thead, table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  th {
+    background-color: gray !important;
+    border-right: 1px solid whitesmoke;
+  }
+  
+  td {
+    height: 58px;
+  }
+  
+  .link {
+    color: blue;
+    text-decoration: underline !important;
+    cursor: pointer;
+  }
+  
